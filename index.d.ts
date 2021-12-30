@@ -1,12 +1,14 @@
-export default function oi<T>(promise: () => Promise<T>, defaultValue?: T): OnceInit<T, void>;
-export default function oi<T, P>(promise: (param: P) => Promise<T>, defaultValue?: T): OnceInit<T, P>;
-export declare abstract class OnceInit<T, P = void> {
-    private observe;
-    private promise;
-    constructor(defaultValue?: T);
-    protected abstract initPromise(param: P): Promise<T>;
-    private initialized;
-    get target(): T | undefined;
-    init(param: P): Promise<T | undefined>;
-    refresh: (param: P) => Promise<T | void>;
+export default function oi<T, P extends Array<any>>(
+  promise: (...param: P) => Promise<T>,
+  defaultValue?: T
+): OnceInit<T, P>;
+export declare abstract class OnceInit<T, P extends Array<any> = void[]> {
+  protected observe: T | void;
+  protected promise: Promise<T> | null;
+  constructor(defaultValue?: T);
+  protected abstract initPromise(...param: P): Promise<T>;
+  protected initialized: boolean;
+  get target(): T | void;
+  init(...param: P): Promise<T | void>;
+  refresh: (...param: P) => Promise<T | void>;
 }

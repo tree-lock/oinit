@@ -1,6 +1,6 @@
 {
   "name": "oinit",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Init a target by promise only once.",
   "repository": "git@github.com:darkXmo/oinit.git",
   "author": "Xmo <18851989097@163.com>",
