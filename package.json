@@ -1,0 +1,75 @@
+{
+  "name": "oinit",
+  "version": "0.1.0",
+  "description": "Init a target by promise only once.",
+  "repository": "git@github.com:darkXmo/once-init.git",
+  "author": "Xmo <18851989097@163.com>",
+  "keywords": [
+    "front-end",
+    "xmon",
+    "xmo",
+    "init",
+    "once-init",
+    "oinit",
+    "promise"
+  ],
+  "homepage": "https://github.com/darkXmo/once-init",
+  "license": "MIT",
+  "dependencies": {
+    "mitt": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-0",
+    "microbundle": "^0.14.2",
+    "rimraf": "^3.0.2",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-typescript": "^7.15.0",
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "git-cz": "^4.8.0",
+    "husky": "^7.0.0",
+    "lint-staged": "^11.1.2",
+    "prettier": "2.4.1",
+    "typescript": "^4.4.3"
+  },
+  "lint-staged": {
+    "src/**/*.vue": [
+      "prettier --write --ignore-unknown"
+    ],
+    "src/**/*.js": [
+      "prettier --write --ignore-unknown"
+    ],
+    "src/**/*.ts": [
+      "prettier --write --ignore-unknown"
+    ],
+    "*.{js,ts,css,md}": "prettier --write --ignore-unknown"
+  },
+  "module": "dist/once-init.mjs",
+  "main": "dist/once-init.js",
+  "jsnext:main": "dist/once-init.mjs",
+  "umd:main": "dist/once-init.umd.js",
+  "source": "src/index.ts",
+  "typings": "index.d.ts",
+  "exports": {
+    "import": "./dist/once-init.mjs",
+    "require": "./dist/once-init.js",
+    "default": "./dist/once-init.mjs"
+  },
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "commit": "git add . && git status && git-cz",
+    "prepare": "husky install",
+    "bundle": "microbundle -f es,cjs,umd",
+    "build": "rimraf dist && npm run bundle",
+    "clean": "rm -rf dist pnpm* yarn.* node_modules package-*"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  }
+}
