@@ -1,6 +1,6 @@
 # oinit
 
-[![npm license](https://img.shields.io/npm/l/once-init.svg?sanitize=true)](https://github.com/darkXmo/once-init/blob/main/LICENSE) [![npm version](https://img.shields.io/npm/v/once-init.svg?sanitize=true)](https://www.npmjs.com/package/once-init)
+[![npm license](https://img.shields.io/npm/l/oinit.svg?sanitize=true)](https://github.com/darkXmo/oinit/blob/main/LICENSE) [![npm version](https://img.shields.io/npm/v/oinit.svg?sanitize=true)](https://www.npmjs.com/package/oinit)
 
 Promise Function Init Once, Use Everywhere.
 
@@ -9,6 +9,10 @@ Promise Function Init Once, Use Everywhere.
 > 第一次调用对象的时候会执行 `Promise` 函数初始化，重复调用，初始化将不会再次执行。
 
 > 同一个 `Promise` 不会在同一时间内被执行两次。
+
+> `oinit` 是 `once init` 的缩写。
+
+[完整版 Github 仓库(包括`factory`和`onLoading`)](https://github.com/darkXmo/once-init)
 
 ## 承诺
 

@@ -1,6 +1,6 @@
 # oinit
 
-[![npm license](https://img.shields.io/npm/l/once-init.svg?sanitize=true)](https://github.com/darkXmo/once-init/blob/main/LICENSE) [![npm version](https://img.shields.io/npm/v/once-init.svg?sanitize=true)](https://www.npmjs.com/package/once-init)
+[![npm license](https://img.shields.io/npm/l/oinit.svg?sanitize=true)](https://github.com/darkXmo/oinit/blob/main/LICENSE) [![npm version](https://img.shields.io/npm/v/oinit.svg?sanitize=true)](https://www.npmjs.com/package/oinit)
 
 Init Once, Use Everywhere.
 
@@ -9,6 +9,8 @@ Let Promise only be initialized once.
 > The Promise will be executed when the attribute target is called for the first time, and the Promise executed will not be executed again when called repeatedly.
 
 > The same Promise will not be executed twice at the same time. Only the first one will be executed, while the rest can still get the result of the promise after executed.
+
+> `oinit` is the short of `once init`.
 
 ## 承诺
 
