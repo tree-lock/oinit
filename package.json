@@ -2,7 +2,7 @@
   "name": "oinit",
   "version": "0.1.0",
   "description": "Init a target by promise only once.",
-  "repository": "git@github.com:darkXmo/once-init.git",
+  "repository": "git@github.com:darkXmo/oinit.git",
   "author": "Xmo <18851989097@163.com>",
   "keywords": [
     "front-end",
@@ -13,15 +13,10 @@
     "oinit",
     "promise"
   ],
-  "homepage": "https://github.com/darkXmo/once-init",
+  "homepage": "https://github.com/darkXmo/oinit",
   "license": "MIT",
-  "dependencies": {
-    "mitt": "^3.0.0"
-  },
   "devDependencies": {
     "@babel/core": "^7.0.0-0",
-    "microbundle": "^0.14.2",
-    "rimraf": "^3.0.2",
     "@babel/preset-env": "^7.15.6",
     "@babel/preset-typescript": "^7.15.0",
     "@commitlint/cli": "^13.1.0",
@@ -30,7 +25,9 @@
     "git-cz": "^4.8.0",
     "husky": "^7.0.0",
     "lint-staged": "^11.1.2",
+    "microbundle": "^0.14.2",
     "prettier": "2.4.1",
+    "rimraf": "^3.0.2",
     "typescript": "^4.4.3"
   },
   "lint-staged": {
@@ -45,16 +42,16 @@
     ],
     "*.{js,ts,css,md}": "prettier --write --ignore-unknown"
   },
-  "module": "dist/once-init.mjs",
-  "main": "dist/once-init.js",
-  "jsnext:main": "dist/once-init.mjs",
-  "umd:main": "dist/once-init.umd.js",
+  "module": "dist/oinit.mjs",
+  "main": "dist/oinit.js",
+  "jsnext:main": "dist/oinit.mjs",
+  "umd:main": "dist/oinit.umd.js",
   "source": "src/index.ts",
   "typings": "index.d.ts",
   "exports": {
-    "import": "./dist/once-init.mjs",
-    "require": "./dist/once-init.js",
-    "default": "./dist/once-init.mjs"
+    "import": "./dist/oinit.mjs",
+    "require": "./dist/oinit.js",
+    "default": "./dist/oinit.mjs"
   },
   "files": [
     "dist",
