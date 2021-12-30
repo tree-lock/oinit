@@ -4,6 +4,7 @@
   <a href="https://github.com/darkXmo/oinit/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/oinit.svg?sanitize=true" alt="npm"></a>
   <a href="https://www.npmjs.com/package/oinit"><img src="https://img.shields.io/npm/v/oinit.svg?sanitize=true" alt="gzip size"></a>
 </p>
+
 <strong style="text-align: center;">🗼 Let Promise Function Executed Only Once.</strong>
 
 > The `Promise` will be executed when the attribute target is called for the first time, and the `Promise` executed will not be executed again when called repeatedly.
