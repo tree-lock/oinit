@@ -47,6 +47,7 @@ For example, use `oinit` with `axios`;
 > assume `res` response returns `any`;
 
 ```typescript
+import oi from "oinit";
 const request = async () => {
   const res: AxiosResponse<any> = await axiosInstance.get("/api");
   return res.data;

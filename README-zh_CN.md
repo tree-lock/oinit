@@ -49,6 +49,7 @@ pnpm add oinit
 > 假设 `res` 的返回值为 `any` ;
 
 ```typescript
+import oi from "oinit";
 const request = async () => {
   const res: AxiosResponse<any> = await axiosInstance.get("/api");
   return res.data;
